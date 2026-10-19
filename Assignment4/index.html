@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            border: 1px solid black;
+            height: 180px;
+            border-radius: 15px;
+            background-color: rgb(34, 34, 145);
+            text-align: center;
+            color: aliceblue;
+        }
+            #container2{
+                border: 2px solid whitesmoke;
+                border-radius: 20px;
+                height: 250px;
+                background-color: whitesmoke;
+                color: black;
+                gap: 50px;
+                display: grid;
+                row-gap: 100px;
+                col gap: 50px;
+            }
+            th, td{
+                padding: 20px;
+                text-align: left;
+            }
+            caption{
+                font-size: 30px;
+                text-align: left;
+                margin-left: 10px;
+                margin-bottom: 20px;
+            }
+         #onerow{
+                background-color:rgb(34, 34, 145);
+                color: white;
+            }
+            #container3{
+                border: 2px solid whitesmoke;
+                background-color: whitesmoke;
+                border-radius: 20px;
+                height: 250px;
+            }
+            button{
+                background-color: rgb(34, 34, 145);
+                color: white;
+              font-size: 15px;
+              border-radius: 5px;
+              width: 125px;
+              height: 40px;
+            }
+            input{
+            height: 30px;
+            }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1 style="font-size: 40px;">Coding Club</h1>
+        <p>Learn. Build. Share.</p>
+    </div><br>
+    <div id="container2">
+        <table>
+            <caption><strong>Upcoming Events</strong></caption>
+           <tr id="onerow">
+            <th>Events</th>
+            <th>Date</th>
+            <th>Venue</th>
+                </tr>
+                <tr>
+                 <td>HTML Workshop</td>
+                 <td>12 Nov</td>
+                 <td>Lab 1</td>
+                    </tr>
+                    <tr>
+                        <td>Hackathon</td>
+                        <td>20 Nov</td>
+                        <td>Seminar Hall</td>
+                        </tr>
+            </table>
+        </div><br>
+        <div id="container3">
+            <h2><strong>Register</strong></h2>
+            <label for="name">Name:
+            <input type="text" id="name" placeholder="Your name" ></label><br><br>
+            <label for="email">Email:
+                <input type="email" id="email" placeholder="you@example.com">
+            </label><br>
+            <button>Register</button>
+        </div>
+</body>
+</html>
