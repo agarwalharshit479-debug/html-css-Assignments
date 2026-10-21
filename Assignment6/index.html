@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        #head{
+            background-color: darkblue;
+            border: 2px solid black;
+            color: white;
+            display: flex;
+            align-items: center;
+           justify-content: space-between;
+        }
+        #buttone{
+            background-color:yellow;
+            height: 40px;
+            width: 80px;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+        h1{
+            margin-left: 20px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            padding: 20px;
+            margin: 20px;
+            display: flex;
+            align-items: normal;
+        } 
+        #main{
+            background-color: blue;
+            color: white;
+            height: 350px;
+           text-align: center;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           flex-direction: column;
+           gap: 20px;
+        
+        }
+        #butttwo{
+            background-color: yellow;
+            height: 30px;
+            width: 100px;
+            border-radius: 15px;
+        }
+        h1{
+            font-size:40px;
+
+            gap: 20px;
+        }
+        .div{
+            border: 2px solid white;
+             height: 70px;
+            width: 300px;
+            text-align: center;
+            padding: 15px;
+            background-color: whitesmoke;
+            border-radius: 10px;
+            margin-left: 5px;
+            
+          
+
+
+        }
+        .Card{
+           display:flex;
+           flex-direction: row;
+           margin-top: 10px;
+           
+        }
+    </style>
+</head>
+<body>
+    <nav id="head">
+        <h1>Code Lab</h1>
+        <a href="#">Home</a>
+        <a href="#">Course</a>
+        <a href="#">Contact</a>
+        <button id="buttone">Sign up</button>
+    </nav>
+    <section id="main">
+        <h1>Learn Web Development</h1>
+        <h3>Start from zero.Build real projects.</h3>
+        <button id="butttwo">Get Started</button>
+    </section>
+    <section class="Card ">
+        <div class="div"><h2>HTML</h2><p>Build the structure</p></div>
+        <div class="div"><h2>CSS</h2><p>Make it beautiful</p></div>
+        <div class="div"><h2>JavaScrit</h2><p>Make it smart</p></div>
+        <div class="div"><h2>Git</h2><p>Save your work</p></div>
+    </section>
+</body>
+</html>
