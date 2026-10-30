@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            background-color: lightslategray;
+        }
+        header{
+            background-color:brown;
+            grid-column-start: 1;
+            grid-column-end: 6;
+            grid-row-start: 1;
+            grid-row-end: 4;
+            text-align: center;
+            font-size: 25px;
+            color: white;
+            border: 1px solid white;
+            
+        }
+        aside{
+            background-color:gray;
+            grid-row-start: 4;
+            grid-row-end: 9;
+            border: 2px solid white;
+            
+        }
+        main{
+          
+            grid-column-start: 2;
+            grid-column-end: 6;
+            grid-row-start: 4;
+            grid-row-end: 9;
+            
+        }
+        footer{
+            background-color:brown;
+            grid-column-start: 1;
+            grid-column-end: 6;
+            grid-row-start: 9;
+            grid-row-end: 11;
+            text-align: center;
+            font-size: 25px;
+            color: white;
+            border: 1px solid white;
+        }
+        .layot{
+            
+            height: 100vh;
+            width: 100vw;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            
+        }
+        .outer{
+            display: flex;
+            flex-direction:row;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap:wrap;
+
+        }
+        .classitem{
+           border:2px solid black ; 
+           margin-top: 30px;
+           height: 70px;
+           width: 200px;
+           border-radius: 20px;
+           background-color: white;
+           text-align: center;
+           color: black;
+           font-size: 30px;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           margin-right: 30px;
+           
+           
+        }
+        ul{
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+     <div class="layot">
+        <header>My Dashboard</header>
+
+
+      
+            <aside>
+                <h2>Menu:</h2>
+                <ul>
+                    <li>Home</li>
+                    <li>Reports</li>
+                    <li>Settings</li>
+                </ul>
+            </aside>
+            <main>
+               <div class="outer">
+                <div class="classitem"><span class="icon">&#128100;</span><div><b>120</b><br>Users</div></div>
+                <div class="classitem"><span class="icon">&#128176;</span><div><b>Rs 45k</b><br>Sales</div></div>
+                <div class="classitem"><span class="icon">&#128230;</span><div><b>36</b><br>Orders</div></div>
+                <div class="classitem"><span class="icon">&#11088;</span><div><b>4.8</b><br>Rating</div></div>
+                <div class="classitem"><span class="icon">&#128172;</span><div><b>18</b><br>Messages</div></div>
+                <div class="classitem"><span class="icon">&#9989;</span><div><b>92%</b><br>Done</div></div>
+                 </div>
+            </main>
+     
+
+
+        <footer>Made With CSS Grid</footer>
+    </div>
+</body>
+</html>
